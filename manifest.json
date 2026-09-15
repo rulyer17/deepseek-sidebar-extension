@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek 侧边栏",
+  "version": "1.0.0",
+  "description": "在浏览器侧边栏中打开 DeepSeek。",
+  "permissions": [
+    "sidePanel",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://chat.deepseek.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "打开 DeepSeek 侧边栏"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "deepseek_embed_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
