@@ -9,6 +9,12 @@
 - 不包含统计、广告、远程配置或第三方脚本。
 - 不需要除侧边栏和 `chat.deepseek.com` 嵌入所需权限以外的权限。
 
+## 界面示意
+
+点击浏览器工具栏中的扩展图标后，DeepSeek 会在浏览器侧边栏中打开：
+
+![DeepSeek 侧边栏界面](./docs/screenshots/deepseek-sidebar.png)
+
 ## 安装
 
 1. 下载或克隆本仓库。
